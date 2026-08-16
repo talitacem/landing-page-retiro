@@ -649,8 +649,8 @@
     /* Storytelling Grid */
     .story-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto auto auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 150px 150px;
       gap: 10px;
       margin-top: 40px;
     }
@@ -664,32 +664,17 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
 
-    .sg-tall {
-      grid-column: 1 / 2;
-      grid-row: 1 / 3;
-    }
-
-    .sg-wide {
-      grid-column: 1 / 3;
-      grid-row: 3 / 4;
-      height: 200px;
-    }
-
-    .sg-sm-1 { grid-column: 2 / 3; grid-row: 1 / 2; height: 180px; }
-    .sg-sm-2 { grid-column: 2 / 3; grid-row: 2 / 3; height: 180px; }
+    .sg-tall { grid-column: 1 / 2; grid-row: 1 / 3; }
+    .sg-wide { grid-column: 2 / 4; grid-row: 1 / 2; }
+    .sg-sm-1 { grid-column: 2 / 3; grid-row: 2 / 3; }
+    .sg-sm-2 { grid-column: 3 / 4; grid-row: 2 / 3; }
 
     @media (min-width: 768px) {
       .story-grid {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 250px 200px;
+        grid-template-rows: 250px 250px;
       }
-      .sg-tall { grid-column: 1 / 2; grid-row: 1 / 3; }
-      .sg-wide { grid-column: 2 / 4; grid-row: 2 / 3; height: 100%; }
-      .sg-sm-1 { grid-column: 2 / 4; grid-row: 1 / 2; height: 100%; }
-      .sg-sm-2 { grid-column: 4 / 5; grid-row: 1 / 3; height: 100%; }
     }
 
     .story-caption {
@@ -1002,7 +987,7 @@
   </section>
 
   <!-- Seção 3: Vivências -->
-  <section class="section section-dark" id="vivencias" style="background: linear-gradient(rgba(44, 53, 50, 0.85), rgba(44, 53, 50, 0.85)), url('fotos/moment-2.jpg') center/cover no-repeat; position: relative;">
+  <section class="section section-dark" id="vivencias" style="background-color: var(--forest); position: relative;">
     <div class="container">
       <p class="section-tag" data-aos="fade-up">O que vamos viver</p>
       <h2 class="section-title" data-aos="fade-up">As Vivências<br><em>do Retiro</em></h2>
@@ -1097,6 +1082,13 @@
   <!-- Seção 5: Storytelling / Galeria -->
   <section class="section section-cream" style="padding-top: 0;">
     <div class="container">
+      
+      <!-- Restaurando o texto que sumiu -->
+      <div data-aos="fade-up" style="text-align: center; margin-bottom: 20px;">
+        <p class="section-tag">✦ Uma história de muitos encontros ✦</p>
+        <h2 class="section-title">Quando mulheres se <em>reúnem</em>,<br>a magia acontece.</h2>
+      </div>
+
       <div class="story-grid" data-aos="fade-up">
         <div class="story-img-box sg-tall"><img src="fotos/foto_p7_tall_web.jpg" alt="Retiro"></div>
         <div class="story-img-box sg-wide"><img src="fotos/foto_p7_web.jpg" alt="Retiro"></div>
@@ -1182,6 +1174,17 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- Nova Seção Restaurada: Pausa Verdadeira -->
+  <section class="section section-dark" style="background: linear-gradient(rgba(45, 60, 49, 0.65), rgba(45, 60, 49, 0.95)), url('fotos/nova_foto_p8.jpg') center/cover; padding: 100px 24px; text-align: center;">
+    <div class="container">
+      <span style="font-size: 32px; display: block; margin-bottom: 16px;">🌿</span>
+      <h2 class="section-title" data-aos="fade-up" style="color: white; margin-bottom: 24px;">Você merece uma<br><em style="color: var(--gold-light);">pausa verdadeira</em></h2>
+      <p class="text-body" data-aos="fade-up" style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-size: 16px;">
+        Este retiro é o reencontro mais bonito que você pode se dar. Por três dias, a natureza, o yoga e a presença de outras mulheres vão te convidar de volta para dentro — para aquela parte de você que ficou esperando um momento de silêncio, de espaço, de cuidado real. Não existe momento perfeito para pausar. Existe apenas a escolha de se colocar em primeiro lugar, agora. <strong>Você já esperou tempo suficiente.</strong>
+      </p>
     </div>
   </section>
 
