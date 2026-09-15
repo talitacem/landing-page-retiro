@@ -5,17 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Forçar HTTPS -->
-  <script>
-    if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-        location.replace(`https:${location.href.substring(location.protocol.length)}`);
-    }
-  </script>
+<!-- HTTPS redirect removed for local testing -->
 
   <title>Retiro BRISA — Talita Casagrande | Yoga & Natureza para Mulheres</title>
   
   <!-- SEO & Meta Tags -->
-  <meta name="description" content="Retiro BRISA: Três dias de yoga, natureza, silêncio e conexão genuína entre mulheres. De 06 a 08 de Novembro na Pousada Salve Floresta (Tapiraí-SP). Garanta sua vaga.">
-  <meta name="keywords" content="retiro de yoga, retiro para mulheres, yoga na natureza, meditação, autoconhecimento, sagrado feminino, Tapiraí, Pousada Salve Floresta, Talita Casagrande">
+  <meta name="description" content="Retiro BRISA: Três dias de yoga, natureza, silêncio e conexão genuína entre mulheres. De 06 a 08 de Novembro na Tribo de Estrelas (Tapiraí-SP). Garanta sua vaga.">
+  <meta name="keywords" content="retiro de yoga, retiro para mulheres, yoga na natureza, meditação, autoconhecimento, sagrado feminino, Tapiraí, Tribo de Estrelas, Talita Casagrande">
   <meta name="author" content="Talita Casagrande">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://retiroyoga.talitacasagrande.com.br/">
@@ -51,7 +47,7 @@
     "eventStatus": "https://schema.org/EventScheduled",
     "location": {
       "@type": "Place",
-      "name": "Pousada Salve Floresta",
+      "name": "Tribo de Estrelas",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Tapiraí",
@@ -519,6 +515,9 @@
       .mosaic-grid {
         grid-template-columns: 2fr 1fr;
       }
+      .mosaic-grid-reverse {
+        grid-template-columns: 1fr 2fr;
+      }
     }
 
     .mosaic-img-box {
@@ -532,6 +531,9 @@
       height: 350px;
     }
 
+        .mosaic-secondary-single {
+      grid-template-rows: 1fr !important;
+    }
     .mosaic-secondary {
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -565,6 +567,7 @@
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 24px;
+      justify-content: center;
     }
 
     .feature-item {
@@ -1033,13 +1036,10 @@
       <!-- Tags do que inclui -->
       <div class="pill-tags-container" data-aos="fade-up">
         <span class="pill-tag pill-sage">🧘 Práticas de Yoga</span>
-        <span class="pill-tag pill-sage">🌊 Cachoeiras</span>
-        <span class="pill-tag pill-sage">🌿 Trilhas</span>
-        <span class="pill-tag pill-terra">💧 Piscina & Sauna</span>
+        <span class="pill-tag pill-sage">🌊 Cachoeira</span>
         <span class="pill-tag pill-terra">🌙 Meditação</span>
         <span class="pill-tag pill-gold">🔥 Rodas</span>
         <span class="pill-tag pill-gold">😂 Conversas & Risos</span>
-        <span class="pill-tag pill-gold">🍃 Alimentação Consciente</span>
       </div>
     </div>
   </section>
@@ -1069,26 +1069,29 @@
         <div class="vivencia-card" data-aos="fade-up" data-aos-delay="200">
           <div class="vivencia-icon">🌊</div>
           <h3 class="vivencia-title">Banho de Cachoeira</h3>
-          <p class="vivencia-text">Imersão sagrada nas cachoeiras privativas da Pousada Salve Floresta. A água que lava, renova e revigora — um banho que vai muito além da pele.</p>
+          <p class="vivencia-text">Imersão sagrada na cachoeira. Uma imersão que lava, renova e revigora — um banho que vai muito além da pele.</p>
         </div>
 
-        <div class="vivencia-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="vivencia-icon">🌿</div>
-          <h3 class="vivencia-title">Trilhas na Mata</h3>
-          <p class="vivencia-text">Caminhadas guiadas na Mata Atlântica preservada, com observação de aves e plantas. A neurociência comprova que a imersão na natureza reduz o cortisol, acalma o sistema nervoso e restaura a atenção, trazendo efeitos curativos imediatos para o corpo e para a mente.</p>
-        </div>
 
-        <div class="vivencia-card" data-aos="fade-up" data-aos-delay="400" style="position:relative;">
-          <span style="position:absolute;top:20px;right:20px;background:rgba(184,149,90,0.15);color:var(--gold-light);font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:20px;border:1px solid rgba(184,149,90,0.5);">Opcional</span>
-          <div class="vivencia-icon">🛶</div>
-          <h3 class="vivencia-title">Passeio de Caiaque</h3>
-          <p class="vivencia-text">Aventura leve e revigorante no lago da pousada. Atividade opcional contratada diretamente com a pousada — uma experiência extra para quem quiser viver o rio de dentro!</p>
-        </div>
+
+
 
         <div class="vivencia-card" data-aos="fade-up" data-aos-delay="500">
           <div class="vivencia-icon">🔥</div>
           <h3 class="vivencia-title">Rodas</h3>
           <p class="vivencia-text">Nos encontramos em roda de conversa, de troca e de convivência — para rir, cozinhar, caminhar e simplesmente existir juntas. Cada roda é um ritual de presença: sem julgamento, sem pressa, sem performance.</p>
+        </div>
+
+        <div class="vivencia-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="vivencia-icon">✨</div>
+          <h3 class="vivencia-title">Tempo no Templo</h3>
+          <p class="vivencia-text">Momentos de silêncio e contato com uma energia purificadora e elevada.</p>
+        </div>
+
+        <div class="vivencia-card" data-aos="fade-up" data-aos-delay="700">
+          <div class="vivencia-icon">🌸</div>
+          <h3 class="vivencia-title">Caminho entre Jardins</h3>
+          <p class="vivencia-text">A Tribo de Estrelas te abraça do começo ao fim pelo seu jardim repleto de amor. É uma experiência viva, provocativa, contemplativa e curativa.</p>
         </div>
       </div>
     </div>
@@ -1098,41 +1101,57 @@
   <section class="section section-cream" id="local">
     <div class="container">
       <p class="section-tag" data-aos="fade-up">O Cenário Perfeito</p>
-      <h2 class="section-title" data-aos="fade-up">Pousada<br><em>Salve Floresta</em></h2>
+      <h2 class="section-title" data-aos="fade-up"><em>Tribo de Estrelas</em></h2>
       
       <div class="mosaic-grid" data-aos="fade-up">
         <div class="mosaic-img-box mosaic-main">
-          <img src="fotos/pousada/trilhas.png" alt="Cachoeira na Pousada Salve Floresta" style="object-position: 0% 50%;">
-          <div class="img-label">Cachoeira · Salve Floresta</div>
+          <img src="fotos/tribo/templo.jpg" alt="Templo na Tribo de Estrelas" style="object-position: 0% 50%;">
         </div>
-        <div class="mosaic-secondary">
+        <div class="mosaic-secondary mosaic-secondary-single">
           <div class="mosaic-img-box">
-            <img src="fotos/chalemadeira.jpg" alt="Chalés da Pousada">
-            <div class="img-label">Chalés</div>
+            <img src="fotos/tribo/02.jpg" alt="Quarto" style="object-position: center top;">
           </div>
-          <div class="mosaic-img-box">
-            <img src="fotos/chaleinterior.jpg" alt="Interior do chalé">
-            <div class="img-label">Interior do Chalé</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 30px;" data-aos="fade-up">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+          <div class="mosaic-img-box" style="aspect-ratio: 4/3;">
+            <img src="fotos/tribo/templodecima2.jpg" alt="Templo Visto de Cima">
           </div>
+          <div class="mosaic-img-box" style="aspect-ratio: 4/3;">
+            <img src="fotos/tribo/saladepratica.jpg" alt="Sala de Prática">
+          </div>
+        </div>
+        <div class="mosaic-img-box" style="aspect-ratio: 21/9;">
+          <img src="fotos/tribo/refeitorio2.jpg" alt="Refeitório" style="object-position: 50% 50%;">
+        </div>
+      </div>
+
+      <div style="margin-bottom: 30px;" data-aos="fade-up">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+          <div class="mosaic-img-box" style="aspect-ratio: 4/3;">
+            <img src="fotos/tribo/05.jpg" alt="Tribo de Estrelas" style="object-position: center 75%;">
+          </div>
+          <div class="mosaic-img-box" style="aspect-ratio: 4/3;">
+            <img src="fotos/tribo/Buda.jpg" alt="Tribo de Estrelas">
+          </div>
+        </div>
+        <div class="mosaic-img-box" style="aspect-ratio: 21/9;">
+          <img src="fotos/tribo/07.jpg" alt="Natureza Tribo de Estrelas" style="object-position: center 60%;">
         </div>
       </div>
       
       <p class="text-body" data-aos="fade-up">
-        A cerca de 3 horas de São Paulo, a Pousada Salve Floresta é um santuário ecológico em plena Mata Atlântica preservada. Fundada em 1994 como projeto de preservação ambiental, o local oferece imersão completa na natureza com <strong>cachoeiras privativas, piscina ao ar livre e sauna</strong>.
+        A cerca de 3 horas de São Paulo, no coração de Tapiraí, a <strong>Tribo de Estrelas</strong> é um lugar-templo onde a magia nos contempla. Um santuário abraçado pela natureza exuberante da Mata Atlântica, preparado especialmente para retiros e momentos profundos de reconexão.
       </p>
       <p class="text-body" data-aos="fade-up">
-        É o palco perfeito para o nosso encontro de <strong>Novembro</strong>. Um espaço que honra tanto a prática espiritual quanto o prazer de estar viva e conectada com a terra.
+        É o palco perfeito para o nosso encontro de <strong>Novembro</strong>. Um espaço vivo e curativo, desenhado para que você possa resgatar o que há de melhor em si, honrando tanto a prática espiritual quanto o prazer de estar conectada com a terra.
       </p>
 
       <div class="features-list" data-aos="fade-up">
         <div class="feature-item">🌿 Mata Atlântica Preservada</div>
-        <div class="feature-item">🏞️ Cachoeiras Privativas</div>
-        <div class="feature-item">🛶 Caiaque (opcional)</div>
-        <div class="feature-item">🏊 Piscina ao Ar Livre</div>
-        <div class="feature-item">🧖 Sauna</div>
-        <div class="feature-item">🏡 Chalés de Madeira</div>
         <div class="feature-item">🍽️ Pensão Completa</div>
-        <div class="feature-item">🥾 Trilhas Guiadas</div>
       </div>
     </div>
   </section>
@@ -1259,8 +1278,7 @@
         <p>O que está incluído:</p>
         <div class="included-item"><span class="dot">✦</span> Pensão completa (café, almoço, chá e jantar)</div>
         <div class="included-item"><span class="dot">✦</span> Todas as práticas guiadas por Talita Casagrande</div>
-        <div class="included-item"><span class="dot">✦</span> Trilhas, cachoeiras, piscina e sauna</div>
-        <div class="included-item"><span class="dot">✦</span> Acomodação em chalé para 2 pessoas</div>
+                <div class="included-item"><span class="dot">✦</span> Acomodação em suíte para 2 pessoas</div>
         <div class="included-item"><span class="dot">✦</span> Grupo íntimo e exclusivo — apenas para mulheres</div>
       </div>
 
@@ -1322,10 +1340,10 @@
       
       <div class="credits-grid">
         <div class="credit-card">
-          <div class="credit-title">Imagens do Local — Pousada</div>
+          <div class="credit-title">Imagens do Local</div>
           <div class="credit-text">
-            Fotos da Pousada Salve Floresta utilizadas com autorização e devida atribuição.<br>
-            © Pousada Salve Floresta · <a href="https://www.salvefloresta.com" target="_blank">www.salvefloresta.com</a>
+            Fotos da Tribo de Estrelas utilizadas com autorização e devida atribuição.<br>
+            © Tribo de Estrelas · <a href="https://" target="_blank"></a>
           </div>
         </div>
         
